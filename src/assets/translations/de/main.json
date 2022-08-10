@@ -1,0 +1,349 @@
+{
+  "common": {
+    "forget": "Vergessen?"
+  },
+  "updateToast": {
+    "keepKey": {
+    }
+  },
+  "multiCurrency": {
+    "toast": {
+    }
+  },
+  "dashboard": {
+    "portfolio": {
+      "empty": {
+      }
+    },
+    "recentTransactions": {
+    }
+  },
+  "fiatRamps": {
+  },
+  "connectWalletPage": {
+  },
+  "connectWallet": {
+    "menu": {
+    }
+  },
+  "defi": {
+    "modals": {
+      "learnMore": {
+        "headers": {
+        },
+        "bodies": {
+        },
+        "cta": {
+        }
+      },
+      "getStarted": {
+        "cta": {
+        }
+      },
+      "cosmosOverview": {
+      },
+      "foxyOverview": {
+      },
+      "overview": {
+      },
+      "claim": {
+      }
+    },
+    "empty": {
+      "farming": {
+      },
+      "stakingVaults": {
+      },
+      "pools": {
+      }
+    },
+    "steps": {
+      "deposit": {
+        "info": {
+        }
+      },
+      "withdraw": {
+        "info": {
+        }
+      },
+      "approve": {
+      },
+      "confirm": {
+      },
+      "status": {
+      }
+    }
+  },
+  "staking": {
+  },
+  "navBar": {
+  },
+  "transactionRow": {
+    "parser": {
+      "weth": {
+      },
+      "yearn": {
+      },
+      "uniV2": {
+      },
+      "thor": {
+      },
+      "foxy": {
+      },
+      "erc20": {
+      }
+    }
+  },
+  "bridge": {
+  },
+  "trade": {
+    "tooltip": {
+    },
+    "errors": {
+      "signing": {
+      }
+    }
+  },
+  "modals": {
+    "keepKey": {
+      "passphrase": {
+        "errors": {
+        }
+      },
+      "label": {
+      },
+      "recoverySettings": {
+      },
+      "recoverySentence": {
+      },
+      "wiped": {
+      },
+      "recoverySentenceEntry": {
+      },
+      "recoverySettingUp": {
+      },
+      "recoveryInvalid": {
+      }
+    },
+    "shapeShift": {
+      "password": {
+        "error": {
+        }
+      },
+      "confirmPassword": {
+        "error": {
+        }
+      }
+    },
+    "stake": {
+      "status": {
+      }
+    },
+    "send": {
+      "errors": {
+      },
+      "confirm": {
+      },
+      "sendForm": {
+      }
+    },
+    "receive": {
+    },
+    "deposit": {
+      "status": {
+      }
+    },
+    "withdraw": {
+      "status": {
+      },
+      "info": {
+      }
+    },
+    "approve": {
+    },
+    "confirm": {
+      "withdraw": {
+      },
+      "deposit": {
+      }
+    },
+    "status": {
+      "header": {
+      }
+    },
+    "connect": {
+    },
+    "settings": {
+      "currencies": {
+      }
+    }
+  },
+  "walletProvider": {
+    "errors": {
+    },
+    "keepKey": {
+      "errors": {
+      },
+      "connect": {
+      },
+      "pin": {
+      },
+      "newPin": {
+      },
+      "newPinConfirm": {
+      },
+      "settings": {
+        "menuLabels": {
+        },
+        "status": {
+        },
+        "headings": {
+        },
+        "descriptions": {
+        },
+        "alerts": {
+          "passphrase": {
+          }
+        },
+        "placeholders": {
+        },
+        "actions": {
+        }
+      },
+      "modals": {
+        "headings": {
+        },
+        "descriptions": {
+        },
+        "actions": {
+        },
+        "confirmations": {
+        },
+        "checkboxes": {
+        }
+      }
+    },
+    "keplr": {
+      "errors": {
+      },
+      "connect": {
+      },
+      "failure": {
+      }
+    },
+    "metaMask": {
+      "errors": {
+      },
+      "connect": {
+      },
+      "failure": {
+      },
+      "redirect": {
+      }
+    },
+    "tallyHo": {
+      "errors": {
+      },
+      "connect": {
+      },
+      "failure": {
+      },
+      "redirect": {
+      }
+    },
+    "portis": {
+      "errors": {
+      },
+      "connect": {
+      },
+      "failure": {
+      }
+    },
+    "walletConnect": {
+      "errors": {
+      },
+      "connect": {
+      },
+      "failure": {
+      }
+    },
+    "xdefi": {
+      "errors": {
+      },
+      "connect": {
+      },
+      "failure": {
+      },
+      "redirect": {
+      }
+    },
+    "shapeShift": {
+      "load": {
+        "error": {
+        }
+      },
+      "import": {
+      },
+      "password": {
+      },
+      "create": {
+      },
+      "start": {
+      },
+      "success": {
+      },
+      "testPhrase": {
+      },
+      "rename": {
+      },
+      "legacy": {
+      }
+    },
+    "selectModal": {
+    }
+  },
+  "graph": {
+    "timeControls": {
+    }
+  },
+  "assets": {
+    "assetDetails": {
+      "assetHeader": {
+      },
+      "assetDescription": {
+      },
+      "assetHistory": {
+      },
+      "assetAccounts": {
+      }
+    },
+    "assetCards": {
+      "assetActions": {
+      },
+      "rewards": {
+      }
+    }
+  },
+  "accounts": {
+  },
+  "transactionHistory": {
+    "filters": {
+    },
+    "csv": {
+    },
+    "transactionTypes": {
+    }
+  },
+  "plugins": {
+    "foxPage": {
+      "otherOpportunitiesTitle": {
+      },
+      "otherOpportunitiesDescription": {
+      }
+    },
+    "analytics": {
+      "optInModal": {
+      }
+    }
+  }
+}
