@@ -463,7 +463,7 @@
     "exact": "Exacte",
     "expectedAmount": "Montant attendu",
     "beforeFees": "Avant frais",
-    "minAmountAfterSlippage": "Min. montant attendu après glissement/slippage (%{slippage}%)",
+    "minAmountAfterSlippage": "Montant minimum attendu après glissement/slippage (%{slippage}%)",
     "tooltip": {
       "rate": "C'est le taux estimé pour cette paire d'échange.",
       "minerFee": "Il s'agit des frais de traitement de la transaction sur la blockchain, ce ne sont pas des frais facturés par ShapeShift.",
