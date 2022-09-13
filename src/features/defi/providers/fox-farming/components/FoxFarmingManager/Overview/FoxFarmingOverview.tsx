@@ -3,11 +3,11 @@ import { Center } from '@chakra-ui/react'
 import { foxAssetId, toAssetId } from '@shapeshiftoss/caip'
 import { DefiModalContent } from 'features/defi/components/DefiModal/DefiModalContent'
 import { Overview } from 'features/defi/components/Overview/Overview'
-import {
-  DefiAction,
+import type {
   DefiParams,
   DefiQueryParams,
 } from 'features/defi/contexts/DefiManagerProvider/DefiCommon'
+import { DefiAction } from 'features/defi/contexts/DefiManagerProvider/DefiCommon'
 import qs from 'qs'
 import { useMemo } from 'react'
 import { FaGift } from 'react-icons/fa'
@@ -17,7 +17,7 @@ import { useFoxEth } from 'context/FoxEthProvider/FoxEthProvider'
 import { useBrowserRouter } from 'hooks/useBrowserRouter/useBrowserRouter'
 import { bnOrZero } from 'lib/bignumber/bignumber'
 import { useGetAssetDescriptionQuery } from 'state/slices/assetsSlice/assetsSlice'
-import { selectAssetById, selectFeatureFlags, selectSelectedLocale } from 'state/slices/selectors'
+import { selectAssetById, selectSelectedLocale } from 'state/slices/selectors'
 import { useAppSelector } from 'state/store'
 
 import { FoxFarmingEmpty } from './FoxFarmingEmpty'
@@ -52,8 +52,6 @@ export const FoxFarmingOverview = () => {
   const selectedLocale = useAppSelector(selectSelectedLocale)
   const descriptionQuery = useGetAssetDescriptionQuery({ assetId: stakingAssetId, selectedLocale })
 
-  const featureFlags = useAppSelector(selectFeatureFlags)
-
   if (loading || !opportunity || !opportunity.apy) {
     return (
       <DefiModalContent>
@@ -85,7 +83,7 @@ export const FoxFarmingOverview = () => {
 
   return (
     <Overview
-      {...(featureFlags.MultiAccounts ? { onAccountIdChange: handleAccountIdChange } : {})}
+      onAccountIdChange={handleAccountIdChange}
       asset={rewardAsset}
       name={opportunity.opportunityName ?? ''}
       icons={opportunity.icons}

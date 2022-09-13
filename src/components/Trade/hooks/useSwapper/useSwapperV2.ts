@@ -1,8 +1,8 @@
 import { type Asset } from '@shapeshiftoss/asset-service'
 import { fromAssetId } from '@shapeshiftoss/caip'
-import { UtxoBaseAdapter } from '@shapeshiftoss/chain-adapters'
+import type { UtxoBaseAdapter } from '@shapeshiftoss/chain-adapters'
 import { type Swapper, type UtxoSupportedChainIds, SwapperManager } from '@shapeshiftoss/swapper'
-import { KnownChainIds } from '@shapeshiftoss/types'
+import type { KnownChainIds } from '@shapeshiftoss/types'
 import { useCallback, useEffect, useState } from 'react'
 import { useFormContext, useWatch } from 'react-hook-form'
 import { useSelector } from 'react-redux'
@@ -14,7 +14,8 @@ import {
   isSupportedNonUtxoSwappingChain,
   isSupportedUtxoSwappingChain,
 } from 'components/Trade/hooks/useSwapper/utils'
-import { type BuildTradeInputCommonArgs, type TradeState } from 'components/Trade/types'
+import type { TS } from 'components/Trade/types'
+import { type BuildTradeInputCommonArgs } from 'components/Trade/types'
 import { getChainAdapterManager } from 'context/PluginProvider/chainAdapterSingleton'
 import { useWallet } from 'hooks/useWallet/useWallet'
 import { logger } from 'lib/logger'
@@ -31,7 +32,7 @@ It does not mutate state.
 */
 export const useSwapper = () => {
   // Form hooks
-  const { control } = useFormContext<TradeState<KnownChainIds>>()
+  const { control } = useFormContext<TS>()
   const sellTradeAsset = useWatch({ control, name: 'sellTradeAsset' })
   const buyTradeAsset = useWatch({ control, name: 'buyTradeAsset' })
   const quote = useWatch({ control, name: 'quote' })

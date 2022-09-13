@@ -8,7 +8,8 @@ import {
   ethChainId,
   foxAssetId,
 } from '@shapeshiftoss/caip'
-import { type Account, cosmos } from '@shapeshiftoss/chain-adapters'
+import type { cosmossdk } from '@shapeshiftoss/chain-adapters'
+import { type Account } from '@shapeshiftoss/chain-adapters'
 import { KnownChainIds } from '@shapeshiftoss/types'
 import merge from 'lodash/merge'
 import toLower from 'lodash/toLower'
@@ -216,7 +217,7 @@ export const mockCosmosAccountWithOnlyUndelegations = Object.freeze({
         },
       },
       {},
-    ] as cosmos.Undelegation[],
+    ] as cosmossdk.Undelegation[],
     sequence: '422',
     accountNumber: '424242',
   },

@@ -1,26 +1,24 @@
 import { Stack } from '@chakra-ui/react'
 import { ethAssetId, foxAssetId } from '@shapeshiftoss/caip'
-import {
-  Withdraw as ReusableWithdraw,
-  WithdrawValues,
-} from 'features/defi/components/Withdraw/Withdraw'
-import {
+import type { WithdrawValues } from 'features/defi/components/Withdraw/Withdraw'
+import { Withdraw as ReusableWithdraw } from 'features/defi/components/Withdraw/Withdraw'
+import type {
   DefiParams,
   DefiQueryParams,
-  DefiStep,
 } from 'features/defi/contexts/DefiManagerProvider/DefiCommon'
+import { DefiStep } from 'features/defi/contexts/DefiManagerProvider/DefiCommon'
 import { useFoxFarming } from 'features/defi/providers/fox-farming/hooks/useFoxFarming'
 import { useContext } from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
 import { Amount } from 'components/Amount/Amount'
 import { AssetIcon } from 'components/AssetIcon'
-import { StepComponentProps } from 'components/DeFi/components/Steps'
+import type { StepComponentProps } from 'components/DeFi/components/Steps'
 import { Text } from 'components/Text'
 import { useFoxEth } from 'context/FoxEthProvider/FoxEthProvider'
 import { useBrowserRouter } from 'hooks/useBrowserRouter/useBrowserRouter'
 import { bn, bnOrZero } from 'lib/bignumber/bignumber'
 import { logger } from 'lib/logger'
-import { selectAssetById, selectFeatureFlags } from 'state/slices/selectors'
+import { selectAssetById } from 'state/slices/selectors'
 import { useAppSelector } from 'state/store'
 
 import { FoxFarmingWithdrawActionType } from '../WithdrawCommon'
@@ -43,8 +41,6 @@ export const ExpiredWithdraw: React.FC<StepComponentProps> = ({ onNext }) => {
   const asset = useAppSelector(state => selectAssetById(state, opportunity?.assetId ?? ''))
   const ethAsset = useAppSelector(state => selectAssetById(state, ethAssetId))
   const foxAsset = useAppSelector(state => selectAssetById(state, foxAssetId))
-
-  const featureFlags = useAppSelector(selectFeatureFlags)
 
   // user info
   const cryptoAmountAvailable = bnOrZero(opportunity?.cryptoAmount)
@@ -139,7 +135,7 @@ export const ExpiredWithdraw: React.FC<StepComponentProps> = ({ onNext }) => {
           volume: '0',
           changePercent24Hr: 0,
         }}
-        {...(featureFlags.MultiAccounts ? { onAccountIdChange: handleAccountIdChange } : {})}
+        onAccountIdChange={handleAccountIdChange}
         onCancel={handleCancel}
         onContinue={handleContinue}
         isLoading={state.loading}
