@@ -550,7 +550,7 @@
         "awaitingButtonPress": "Suivez les étapes sur votre KeepKey pour afficher votre phrase de récupération. Écrivez-la !"
       },
       "factoryState": {
-        "header": "Commencer avec Keepkey",
+        "header": "Commencer avec KeepKey",
         "body": "Votre KeepKey est réglé sur les paramètres d'usine par défaut. Créez un nouveau porte-monnaie ou restaurez un porte-monnaie à l'aide de votre phrase de récupération secrète",
         "createButton": "Créer un nouveau porte-monnaie",
         "recoverButton": "Récupérer un porte-monnaie"
