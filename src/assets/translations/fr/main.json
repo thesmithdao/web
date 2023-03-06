@@ -1781,7 +1781,7 @@
       "minRisk": "Exposition aux risques minimisée",
       "builtInCoverage": "Couverture intégrée pour des récompenses à taux variable",
       "noLockingPeriod": "Pas de période/epoch de verrouillage",
-      "autoReinvest": "Auto-réinvestissement des jetons accumulés"
+      "autoReinvest": "Réinvestissement automatique des jetons accumulés"
     },
     "bestYield": {
       "title": "Qu'est-ce que la stratégie \"Best Yield\" ?",
